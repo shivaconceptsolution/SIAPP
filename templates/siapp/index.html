@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link href="/static/style.css"  type="text/css" rel="stylesheet" />
+</head>
+<body>
+<header>
+	
+	<center><h1>SI FORM </h1></center>
+</header>	
+<section>
+	<div style="padding-top:50px;padding-left: 200px; ">
+  <form action="silogic" method="post">
+  	{% csrf_token  %}
+    <input type="number" name="txtp" placeholder="Enter value for p" required="" />
+    <br><br>
+    <input type="number" name="txtr" placeholder="Enter value for r" required="" />
+    <br><br>
+    <input type="number" name="txtt" placeholder="Enter value for t" required="" />
+    <br><br>
+    <input type="submit" name="btnsubmit" value="Calculate" />
+  </form>
+</div>
+  </section>	
+  <footer></footer>
+</body>
+</html>
